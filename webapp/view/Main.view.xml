@@ -8,6 +8,7 @@
 				</statuses>
 				<attributes>
 					<ObjectAttribute text="Category:{/CategoryName}"></ObjectAttribute>
+					<ObjectAttribute text="Dummy"></ObjectAttribute>
 				</attributes>
 			</ObjectHeader>
 		</content>
