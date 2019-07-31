@@ -93,6 +93,12 @@
 					"name": "main",
 					"pattern": "",
 					"target": "mainTarget"
+				},
+				
+				{
+					"name": "detail",
+					"pattern": "detail({path23})",
+					"target": "Detail"
 				}
 			],
 			"targets": {
@@ -112,6 +118,10 @@
 				"Main": {
 					"viewType": "XML",
 					"viewName": "Main"
+				},
+				"Detail": {
+					"viewType": "XML",
+					"viewName": "Detail"
 				}
 			}
 		}

@@ -4,13 +4,29 @@
 		<content>
 			<ObjectHeader title="{/Description}" number="{/AvgPrice}" numberUnit="{path:'/Unit'}">
 				<statuses>
-					<ObjectStatus text="{/Status}" state="Success" ></ObjectStatus>
+					<ObjectStatus text="{/Status}" state="Success"></ObjectStatus>
 				</statuses>
 				<attributes>
 					<ObjectAttribute text="Category:{/CategoryName}"></ObjectAttribute>
 					<ObjectAttribute text="Dummy"></ObjectAttribute>
 				</attributes>
 			</ObjectHeader>
+			<IconTabBar>
+				<items>
+					<IconTabFilter icon="sap-icon://product" text="{i18n>pdt}">
+						<List items="{/products/}">
+							<items>
+								<StandardListItem title="{ProductName}" description="{QuantityPerUnit}" type="Active" press="go2Details"></StandardListItem>
+							</items>
+						</List>
+					</IconTabFilter>	
+						<IconTabFilter icon="sap-icon://hint">
+							<Label text="dummy"></Label>
+							
+						</IconTabFilter>
+					
+				</items>
+			</IconTabBar>
 		</content>
 	</Page>
 </mvc:View>
